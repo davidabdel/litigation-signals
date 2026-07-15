@@ -63,6 +63,7 @@
   .pill{font-family:var(--mono);font-weight:700;font-size:.62rem;letter-spacing:.08em;padding:5px 12px;border-radius:99px;color:#fff;white-space:nowrap}
   .pill-red{background:var(--petition)} .pill-live{background:var(--live)}
   .lead-card h3{font-family:var(--mono);font-weight:700;font-size:1.1rem;color:var(--navy);letter-spacing:.03em;margin:0}
+  .illustrative-tag{font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);margin-top:8px}
   .lead-sub{font-family:var(--mono);font-size:.7rem;color:var(--grey);margin:6px 0 18px}
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px}
   .f label{display:block;font-family:var(--mono);font-weight:700;font-size:.58rem;letter-spacing:.14em;color:var(--grey);text-transform:uppercase}
@@ -201,6 +202,7 @@
           <h3>HELIOS FREIGHT PTY LTD</h3>
           <div class="lead-tags"><span class="pill pill-red">COMMERCIAL</span><span class="pill pill-live">NO FIRM YET</span></div>
         </div>
+        <div class="illustrative-tag">Illustrative example — sample data, not a real matter</div>
         <div class="lead-sub">ACN 000 000 000 · ALEXANDRIA NSW · FREIGHT &amp; LOGISTICS</div>
         <div class="grid2">
           <div class="f"><label>Applicant</label><div>Meridian Capital Pty Ltd</div></div>
@@ -212,7 +214,7 @@
         </div>
         <div class="why"><b>Why it matters</b>Solvent respondent, high-fee defence. 28-day clock running — no solicitor on the record.</div>
       </div>
-      <div class="stamp">COURT VERIFIED</div>
+      <div class="stamp">SAMPLE DATA</div>
     </div>
   </div>
 </header>
@@ -288,10 +290,10 @@
       <div class="per">FOUNDERS PRICING — AUSTRALIA-WIDE FEED · WEEKDAYS 7AM</div>
       <div class="anchor-price"><s class="strike">$1,997</s> <span>/ MO AT GENERAL RELEASE</span></div>
       <div class="amt">$1,490</div>
-      <div class="per founders">PER MONTH — FOUNDERS ONLY</div>
+      <div class="per founders">PER MONTH + GST — FOUNDERS ONLY</div>
       <div class="seat">5 firms per market, per state</div>
       <a class="btn btn-gold" href="#optin">Reserve your seat</a>
-      <div class="foot-note">Founders rate locked for 12 months. Rises to $1,997/mo when founders intake closes.</div>
+      <div class="foot-note">Founders rate locked for 12 months. Rises to $1,997/mo + GST when founders intake closes.</div>
     </div>
   </div>
 </section>
@@ -367,7 +369,7 @@
   // (GoHighLevel inbound webhook, Formspree URL, etc). Leave blank to fall
   // back to opening an email with the details pre-filled.
   var FORM_ENDPOINT = "https://services.leadconnectorhq.com/hooks/Mf8u8bZ4PRZbFQBuWPoH/webhook-trigger/b005d7d0-7e1b-491d-b7e9-e6057e62dc32";
-  var FALLBACK_EMAIL = "hello@distresssignals.com.au";
+  var FALLBACK_EMAIL = "hello@suedyesterday.com";
 
   document.getElementById("optinForm").addEventListener("submit", function (e) {
     e.preventDefault();
