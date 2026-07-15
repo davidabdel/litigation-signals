@@ -57,10 +57,11 @@
   .dossier{position:relative}
   .dossier::before{content:"";position:absolute;inset:14px -14px -14px 14px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:8px}
   .lead-card{position:relative;background:#fff;color:var(--ink);border-radius:8px;box-shadow:0 30px 60px rgba(0,0,0,.45);padding:26px 26px 20px;border-left:5px solid var(--petition)}
-  .lead-tags{position:absolute;top:22px;right:22px;display:flex;gap:8px}
-  .pill{font-family:var(--mono);font-weight:700;font-size:.62rem;letter-spacing:.08em;padding:5px 12px;border-radius:99px;color:#fff}
+  .lead-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .lead-tags{display:flex;flex-wrap:wrap;gap:8px;flex:none}
+  .pill{font-family:var(--mono);font-weight:700;font-size:.62rem;letter-spacing:.08em;padding:5px 12px;border-radius:99px;color:#fff;white-space:nowrap}
   .pill-red{background:var(--petition)} .pill-live{background:var(--live)}
-  .lead-card h3{font-family:var(--mono);font-weight:700;font-size:1.1rem;color:var(--navy);letter-spacing:.03em;padding-right:150px}
+  .lead-card h3{font-family:var(--mono);font-weight:700;font-size:1.1rem;color:var(--navy);letter-spacing:.03em;margin:0}
   .lead-sub{font-family:var(--mono);font-size:.7rem;color:var(--grey);margin:6px 0 18px}
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px}
   .f label{display:block;font-family:var(--mono);font-weight:700;font-size:.58rem;letter-spacing:.14em;color:var(--grey);text-transform:uppercase}
@@ -156,8 +157,6 @@
     .steps::before{display:none}
     .fields{grid-template-columns:1fr}
     .price-box{grid-template-columns:1fr}
-    .lead-card h3{padding-right:0}
-    .lead-tags{position:static;margin-bottom:12px}
   }
 </style>
 </head>
@@ -197,8 +196,10 @@
     </div>
     <div class="dossier" aria-hidden="true">
       <div class="lead-card">
-        <div class="lead-tags"><span class="pill pill-red">COMMERCIAL</span><span class="pill pill-live">NO FIRM YET</span></div>
-        <h3>HELIOS FREIGHT PTY LTD</h3>
+        <div class="lead-head">
+          <h3>HELIOS FREIGHT PTY LTD</h3>
+          <div class="lead-tags"><span class="pill pill-red">COMMERCIAL</span><span class="pill pill-live">NO FIRM YET</span></div>
+        </div>
         <div class="lead-sub">ACN 000 000 000 · ALEXANDRIA NSW · FREIGHT &amp; LOGISTICS</div>
         <div class="grid2">
           <div class="f"><label>Applicant</label><div>Meridian Capital Pty Ltd</div></div>
